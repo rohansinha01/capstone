@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## PROJECT OVERVIEW
 
-## Getting Started
+- NAME: ROHAN SINHA
+- PROJECT NAME: DID I LIKE THAT?
+- GITHUB LINK: https://github.com/rohansinha01/capstone
+- DEPLOYED LINK: *ADD LATER*
+### Project Description
 
-First, run the development server:
+Media consumption has never been higher in this world. It has never been easier to get involved in media discourse than this moment in time. We all watch, read, or listen to so much that it gets tricky deciphering what you just watched and if you liked it or not. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+What I want to accomplish with this app is give me people clarity on WHY they enjoyed something using 3 key data points marking each point on a 1-5 enjoyment scale. The categories are:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Characters:
+How did you enjoy the characters in this story? Were they effective in making you feel for them? Did the performances take the project to the next level? 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Story:
+How did you enjoy the story? There are many ways to define writing, but let's simplify them to three components: Big Picture, Dialogue, Events that took place. Do all of these work together?
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### Vibe: 
+Vile characters getting a big reaction of disgust out of you is effective, but did it ruin your mood watching them? A well made movie about a dark subject matter, no matter how well made, will dampen the amount you want to think about it. This category is dedicated to the vibe of the media. The X-Factor that can make a technically bad movie enjoyable.
 
-## Learn More
+We will take the score of all 3 categories and attribute each score with the following:
 
-To learn more about Next.js, take a look at the following resources:
+##### Scoring:
+3-7: "I didn't like it!"<br>
+8-12: "I liked it!"<br>
+13-15: "I loved it!"
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Of course, things change. People change. Weather change. Opinions change. You can always update your score after time with the piece of media. That is allowed. And encouraged!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## TECHNOLOGIES USED
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+NextJS: Frontend<br>
+Appwrite: Backend<br>
+typescript: using it within NextJS<br>
+tailwind: styling
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Frontend Route Map
+| Route Name | Path  | Action | Description |
+|------------|----------|--------|-------------|
+| Media Index | ""  | allMedia  |  Renders all of the Media and thoughts on a page |
+| Create Media | "/addMedia" | createAction | Creates the new Media from the form |
+| Update Media | "/id"  | updateAction | Updates the existing Media from the form  |
+| Remove Media | "delete/id" | deleteAction | Deletes the Media selected |
+
+
+
+## ERD (Entity Relationship Diagram) and Architecture
+ERD<br>
+![ERD](https://imgur.com/ahw3Qg3.png)
+
+Architecture<br>
+![Architecture](https://imgur.com/KctWBno.png)
+
+
+## DESKTOP VIEW
+![Desktop View](https://imgur.com/bpnhbHZ.png)
+
+
