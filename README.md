@@ -34,7 +34,7 @@ Of course, things change. People change. Weather change. Opinions change. You ca
 NextJS: Frontend<br>
 Appwrite: Backend<br>
 typescript: using it within NextJS<br>
-tailwind: styling
+tailwind: styling<br>
 
 ## Frontend Route Map
 | Route Name | Path  | Action | Description |
