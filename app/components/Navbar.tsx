@@ -26,9 +26,9 @@ export const Navbar = () => {
             return menuClasses.join("")
         }
     return (
-        <nav className="bg-gray-800 text-white p-4 sm:p-6 md:flex md: justify-between md: items-center">
+        <nav className="bg-blue-800 text-white p-4 sm:p-6 md:flex md: justify-between md: items-center rounded-bl-lg rounded -br-lg">
            <div className="container mx-auto flex justify-between items-center">  
-            <Link href="/" className="container mx-auto flex justify-between items-center">Did I Like That</Link>
+            <Link href="/" className="container mx-auto flex justify-between items-center">Did I Like That?</Link>
            
                 
                 <div className={getMenuClasses()}>
