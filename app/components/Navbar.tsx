@@ -32,7 +32,7 @@ export const Navbar = () => {
            
                 
                 <div className={getMenuClasses()}>
-                    <Link  href="/new" className="mx-2 hover: text-gray-300">New Entry</Link>
+                    <Link  href="/create" className="mx-2 hover: text-gray-300">New Entry</Link>
                     <Link  href="https://github.com/rohansinha01/capstone" className="mx-2 hover: text-gray-300">Github</Link>
                     <Link  href="/faq" className="mx-2 hover: text-gray-300">FAQ</Link>
                 </div>
