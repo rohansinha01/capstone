@@ -7,6 +7,9 @@ import Link from "next/link";
 interface MMedia {
   $id: string;
   name: string;
+  characters: number;
+  story: number;
+  vibes: number;
 }
 
 
@@ -53,7 +56,7 @@ export default function Home() {
     {error && <p className="py-4 text-red-500">{error}</p>}
     {isLoading ? (
     <p>Loading Media...</p>
-    ) : (
+    ) : media.length > 0 ? (
       <div className="mx-16">
         <div >
       {
@@ -63,6 +66,7 @@ export default function Home() {
           key={aMedia.$id}
           className="p-4 my-2 rounded-md border-b leading-8">
              <div className="font-bold">{aMedia.name}</div>
+             <div>{aMedia.characters + aMedia.story + aMedia.vibes}</div>
     </div>
     <div className="flex gap-4 mt-4 justify-start">
     <Link className="bg-green-400 px-4 py-2 rounded-md uppercase text-sm font-bold tracking-widest" href={`/show/${aMedia.$id}`}>show</Link>
@@ -78,7 +82,11 @@ export default function Home() {
       }
      
     </div>
-    </div>)}
+    </div>
+    ) :(
+      <p>No Media Found</p>
+    )
+    }
   </>  
   );
 }
