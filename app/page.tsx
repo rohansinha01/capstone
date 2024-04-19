@@ -65,7 +65,7 @@ export default function Home() {
           <div 
           key={aMedia.$id}
           className="p-4 my-2 rounded-md border-b leading-8">
-             <div className="font-bold">{aMedia.name}</div>
+             <div  className="font-bold">{aMedia.name}</div>
              <div>{aMedia.characters + aMedia.story + aMedia.vibes}</div>
     </div>
     <div className="flex gap-4 mt-4 justify-start">
