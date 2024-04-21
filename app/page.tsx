@@ -70,7 +70,7 @@ export default function Home() {
     </div>
     <div className="flex gap-4 mt-4 justify-start">
     <Link className="bg-green-400 px-4 py-2 rounded-md uppercase text-sm font-bold tracking-widest" href={`/show/${aMedia.$id}`}>show</Link>
-      <Link className="bg-slate-200 px-4 py-2 rounded-md uppercase text-sm font-bold tracking-widest" href={`/edit${aMedia.$id}`}>Edit</Link>
+      <Link className="bg-slate-200 px-4 py-2 rounded-md uppercase text-sm font-bold tracking-widest" href={`/edit/${aMedia.$id}`}>Edit</Link>
       <button 
       onClick={() => handleDelete(aMedia.$id)}
       className="bg-red-500 px-4 py-2 text-white rounded-md uppercase text-sm font-bold tracking-widest">
