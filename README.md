@@ -3,7 +3,7 @@
 - NAME: ROHAN SINHA
 - PROJECT NAME: DID I LIKE THAT?
 - GITHUB LINK: https://github.com/rohansinha01/capstone
-- DEPLOYED LINK: *ADD LATER*
+- DEPLOYED LINK: https://capstone-two-psi.vercel.app/show/6621f79f7613bf136609
 ### Project Description
 
 Media consumption has never been higher in this world. It has never been easier to get involved in media discourse than this moment in time. We all watch, read, or listen to so much that it gets tricky deciphering what you just watched and if you liked it or not. 
