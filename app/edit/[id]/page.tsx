@@ -87,7 +87,7 @@ export default function EditPage({ params }: { params: { id: string } }) {
             <input type="number" min={1} max={5} name="characters" placeholder="Characters" value={formData.characters} className="py-1 px-4 border rounded-md" onChange={handleInputChange}/>
             <input type="number" min={1} max={5} name="story" placeholder="Story" value={formData.story} className="py-1 px-4 border rounded-md" onChange={handleInputChange}/>
             <input type="number" min={1} max={5} name="vibes" placeholder="Vibes" value={formData.vibes} className="py-1 px-4 border rounded-md" onChange={handleInputChange}/>
-            <button className="bg-yellow-500 text-white mt-5 px-4 py-1 rounded-md cursor-pointer" type="submit" disabled={isLoading}>{isLoading ? "Adding..." : "Did You Like This?"}</button>
+            <button className="bg-yellow-500 text-white mt-5 px-4 py-1 rounded-md cursor-pointer" type="submit" disabled={isLoading}>{isLoading ? "Updating..." : "Checking to see if your opinion changed?"}</button>
         </form>
         {error && <p className="text-red-500 mt-4">{error}</p>}
         </div>
