@@ -3,6 +3,7 @@
 import { Navbar } from "../components/Navbar";
 import { ChangeEvent, useState } from "react";
 import { useRouter } from "next/navigation";
+import { Footer } from "../components/Footer";
 
 export default function CreatePage() {
     const [formData, setFormData] = useState({ name: "", characters: "", story: "", vibes: ""})
@@ -67,5 +68,6 @@ export default function CreatePage() {
         </form>
         {error && <p className="text-red-500 mt-4">{error}</p>}
         </div>
+        <Footer />
         </>
 )}

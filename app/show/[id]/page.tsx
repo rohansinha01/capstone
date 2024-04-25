@@ -1,4 +1,5 @@
 "use client";
+import { Footer } from "@/app/components/Footer";
 import { Navbar } from "@/app/components/Navbar"; 
 import { use, useEffect, useState } from "react";
 
@@ -57,6 +58,7 @@ export default function ShowPage({ params }: { params: { id: string } }) {
         <h2>Score: {formData.score}</h2>
         {error && <p className="text-red-500 mt-4">{error}</p>}
         </div>
+    <Footer />
         </>
   );
 }

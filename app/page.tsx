@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer"
 import Link from "next/link";
 
 interface MMedia {
@@ -87,6 +88,7 @@ export default function Home() {
       <p>No Media Found</p>
     )
     }
+   <Footer /> 
   </>  
   );
 }

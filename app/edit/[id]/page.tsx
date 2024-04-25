@@ -1,4 +1,5 @@
 "use client";
+import { Footer } from "@/app/components/Footer";
 import { Navbar } from "@/app/components/Navbar"; 
 import { useRouter } from "next/navigation";
 import { ChangeEvent, useEffect, useState } from "react";
@@ -91,6 +92,7 @@ export default function EditPage({ params }: { params: { id: string } }) {
         </form>
         {error && <p className="text-red-500 mt-4">{error}</p>}
         </div>
+        <Footer />
         </>
   );
 }
