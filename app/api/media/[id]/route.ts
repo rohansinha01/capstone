@@ -36,7 +36,7 @@ async function deleteMedia(id: string) {
 
 // Update a specific interpretation
 
-async function updateMedia(id: string, data: {name: string, characters: number, story: number, vibes: number}) {
+async function updateMedia(id: string, data: {name: string, characters: number, story: number, vibes: number, score: number}) {
     try {
         const response = await database.updateDocument( 
             process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID as string,

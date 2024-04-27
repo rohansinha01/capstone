@@ -1,6 +1,8 @@
 'use client'
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { GiShrug } from "react-icons/gi";
+
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -26,11 +28,13 @@ export const Navbar = () => {
             return menuClasses.join("")
         }
     return (
-        <nav className="bg-blue-800 text-white p-4 sm:p-6 md:flex md: justify-between md: items-center rounded-bl-lg rounded -br-lg">
+        <nav className="bg-green-800 text-white p-4 sm:p-6 md:flex md: justify-between md: items-center rounded-bl-lg rounded -br-lg">
            <div className="container mx-auto flex justify-between items-center">  
-            <Link href="/" className="container mx-auto flex justify-between items-center">Did I Like That?</Link>
-           
-                
+           <GiShrug /><GiShrug /><GiShrug /><GiShrug />
+            <Link href="/" className="container mx-auto flex justify-between items-center"><GiShrug />Did I Like That?<GiShrug /></Link>
+            <GiShrug /><GiShrug /><GiShrug /><GiShrug />
+            
+    
                 <div className={getMenuClasses()}>
                     <Link  href="/create" className="mx-2 hover: text-gray-300">New Entry</Link>
                     <Link  href="https://github.com/rohansinha01/capstone" className="mx-2 hover: text-gray-300">Github</Link>

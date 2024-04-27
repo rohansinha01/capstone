@@ -67,7 +67,8 @@ export default function Home() {
           key={aMedia.$id}
           className="p-4 my-2 rounded-md border-b leading-8">
              <div  className="font-bold">{aMedia.name}</div>
-             <div>{aMedia.characters + aMedia.story + aMedia.vibes}</div>
+             <div>Score: {aMedia.characters + aMedia.story + aMedia.vibes}</div>
+             <div></div>
     </div>
     <div className="flex gap-4 mt-4 justify-start">
     <Link className="bg-green-400 px-4 py-2 rounded-md uppercase text-sm font-bold tracking-widest" href={`/show/${aMedia.$id}`}>show</Link>
