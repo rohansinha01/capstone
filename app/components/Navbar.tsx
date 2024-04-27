@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import { useState } from "react";
-
+import { GiShrug } from "react-icons/gi";
 
 
 export const Navbar = () => {
@@ -30,9 +30,15 @@ export const Navbar = () => {
     return (
         <nav className="bg-green-800 text-white p-4 sm:p-6 md:flex md: justify-between md: items-center rounded-bl-lg rounded -br-lg">
            <div className="container mx-auto flex justify-between items-center">  
-           
-            <Link href="/" className="container mx-auto flex justify-between items-center">Did I Like That?</Link>
-           
+           <GiShrug /><GiShrug /><GiShrug /><GiShrug />
+
+            <Link href="/" className="container mx-auto flex justify-between items-center"><GiShrug />Did I Like That?<GiShrug /></Link>
+            
+            <GiShrug />
+            <GiShrug />
+            <GiShrug />
+            <GiShrug />
+
             
     
                 <div className={getMenuClasses()}>
