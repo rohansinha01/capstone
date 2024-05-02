@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { Footer } from "../components/Footer";
 
 export default function CreatePage() {
-    const [formData, setFormData] = useState({ name: "", characters: "", story: "", vibes: ""})
+    const [formData, setFormData] = useState({ name: "", characters: 0, story: 0, vibes: 0})
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
@@ -28,7 +28,9 @@ export default function CreatePage() {
           setError("Please fill in all the fields");
           return;
         }
-    
+        formData.characters = Number(formData.characters)
+        formData.story = Number(formData.story)
+        formData.vibes = Number(formData.vibes)
         setError(null);
         setIsLoading(true);
     

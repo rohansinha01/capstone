@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { ChangeEvent, useEffect, useState } from "react";
 
 export default function EditPage({ params }: { params: { id: string } }) {
-  const [formData, setFormData] = useState({ name: "", characters: "", story: "", vibes: "" });
+  const [formData, setFormData] = useState({ name: "", characters: 0, story: 0, vibes: 0 });
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -52,6 +52,12 @@ export default function EditPage({ params }: { params: { id: string } }) {
       return;
     }
 
+    formData.characters = Number(formData.characters)
+    formData.story = Number(formData.story)
+    formData.vibes = Number(formData.vibes)
+
+    console.log(formData)
+    console.log(Number(formData.characters))
     setError(null);
     setIsLoading(true);
 
