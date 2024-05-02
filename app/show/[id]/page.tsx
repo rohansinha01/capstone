@@ -48,9 +48,9 @@ export default function ShowPage({ params }: { params: { id: string } }) {
     <>
     <Navbar />
     
-        <div> 
-        <h2 className="text-2xl font-bold my-8">New Media Entry</h2>
-        <h1>Name: {formData.name}</h1>
+        <div className="grid gap-4 place-content-center"> 
+        
+        <h2 className="text-2xl font-bold my-8">Name: {formData.name}</h2>
         <h1>Characters: {formData.characters}</h1>
         <h1>Story: {formData.story}</h1>
         <h1>Vibes: {formData.vibes}</h1>
